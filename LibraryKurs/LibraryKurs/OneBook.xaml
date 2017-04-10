@@ -1,0 +1,33 @@
+﻿<Window x:Class="LibraryKurs.OneBook"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryKurs"
+        mc:Ignorable="d"
+        Title="OneBook" Height="700" Width="1300"
+        WindowStyle="None" ResizeMode="NoResize"  
+        WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/OneBookBack.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Rectangle Fill="#7F000000" HorizontalAlignment="Left" Height="700" Stroke="Black" VerticalAlignment="Top" Width="1300"/>
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Margin="356,46,0,0" VerticalAlignment="Top" FontSize="40" FontFamily="Segoe Script" FontWeight="Bold" Width="886" Height="74"/>
+        <TextBox x:Name="Author" HorizontalAlignment="Left" Margin="356,128,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Segoe Script" FontWeight="Bold" Width="886" Height="79"/>
+        <TextBox x:Name="Publishing" HorizontalAlignment="Left" Margin="356,215,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Segoe Script" FontWeight="Bold" Width="886" Height="79"/>
+        <TextBox x:Name="Year" HorizontalAlignment="Left" Margin="356,302,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Segoe Script" FontWeight="Bold" Width="489" Height="79"/>
+        <TextBox x:Name="Pages" HorizontalAlignment="Left" Margin="356,564,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Segoe Script" FontWeight="Bold" Width="489" Height="79"/>
+        <TextBox x:Name="Availability" HorizontalAlignment="Left" Margin="356,477,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Segoe Script" FontWeight="Bold" Width="489" Height="79"/>
+        <ComboBox x:Name="Genre" HorizontalAlignment="Left" Margin="356,390,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Segoe Script" FontWeight="Bold" Width="489" Height="79"/>
+        <Button x:Name="CloseBtn" Content="Close" HorizontalAlignment="Left" Margin="897,517,0,0" VerticalAlignment="Top" Width="345" Height="126" FontSize="40" Click="CloseBtn_Click"/>
+        <Button x:Name="SaveBtn" Content="Save" HorizontalAlignment="Left" Margin="897,346,0,0" VerticalAlignment="Top" Width="345" Height="123" FontSize="40" Click="SaveBtn_Click"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="31,46,0,0" VerticalAlignment="Top" Foreground="#FFE8E8E8" FontSize="45" FontFamily="Segoe Script" FontWeight="Bold"/>
+        <Label Content="Author:" HorizontalAlignment="Left" Margin="31,127,0,0" VerticalAlignment="Top" Foreground="#FFE8E8E8" FontSize="40" FontFamily="Segoe Script" FontWeight="Bold"/>
+        <Label Content="Publishing:" HorizontalAlignment="Left" Margin="31,213,0,0" VerticalAlignment="Top" Foreground="#FFE8E8E8" FontSize="40" FontFamily="Segoe Script" FontWeight="Bold"/>
+        <Label Content="Year:" HorizontalAlignment="Left" Margin="31,304,0,0" VerticalAlignment="Top" Foreground="#FFE8E8E8" FontSize="45" FontFamily="Segoe Script" FontWeight="Bold"/>
+        <Label Content="Genre:" HorizontalAlignment="Left" Margin="31,390,0,0" VerticalAlignment="Top" Foreground="#FFE8E8E8" FontSize="40" FontFamily="Segoe Script" FontWeight="Bold"/>
+        <Label Content="Availability:" HorizontalAlignment="Left" Margin="31,476,0,0" VerticalAlignment="Top" Foreground="#FFE8E8E8" FontSize="40" FontFamily="Segoe Script" FontWeight="Bold"/>
+        <Label Content="Pages:" HorizontalAlignment="Left" Margin="31,570,0,0" VerticalAlignment="Top" Foreground="#FFE8E8E8" FontSize="45" FontFamily="Segoe Script" FontWeight="Bold"/>
+    </Grid>
+</Window>
